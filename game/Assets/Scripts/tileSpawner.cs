@@ -6,7 +6,7 @@ public class tileSpawner : MonoBehaviour{
     public GameObject tileToSpawn;
     public GameObject referenceObject;
     public float timeOffset = 0.4f;
-    public float distanceBetweenTiles = 5.0F;
+    public float distanceBetweenTiles = 0.1F;
     public float randomValue = 0.8f;
     private Vector3 previousTilePosition;
     private float startTime;

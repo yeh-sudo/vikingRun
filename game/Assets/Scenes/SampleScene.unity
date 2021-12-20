@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.8
+      value: 8.03
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -201,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.43
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -351,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 574c28c3cf745de4fbb13a122ed4f0ef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 574c28c3cf745de4fbb13a122ed4f0ef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -403,13 +403,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!114 &962200204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
   tileToSpawn: {fileID: 8922978390791683713, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
   referenceObject: {fileID: 978590366}
   timeOffset: 0.4
-  distanceBetweenTiles: 5
+  distanceBetweenTiles: 3
   randomValue: 0.8
 --- !u!1 &978590366 stripped
 GameObject:
@@ -603,7 +603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.49
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -755,7 +755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.18
+      value: 11.99
       objectReference: {fileID: 0}
     - target: {fileID: 7789076355392562364, guid: 77194b26d19aed746807e608fb75ba4e, type: 3}
       propertyPath: m_LocalRotation.w
