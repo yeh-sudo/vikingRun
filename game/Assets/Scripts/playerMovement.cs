@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour {
 
-    [SerializeField] private float speed = 7.0f;
+    [SerializeField] private float speed = 9.0f;
     private bool turnLeft, turnRight, jump;
     private CharacterController myCharacterController;
-    private float jumpSpeed = 7.0f;
+    private float jumpSpeed = 9.0f;
     private float ySpeed = -1.0f;
     private Vector3 upwardVec;
     private Vector3 moveDir;
