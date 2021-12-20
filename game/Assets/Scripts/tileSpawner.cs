@@ -9,6 +9,7 @@ public class tileSpawner : MonoBehaviour{
     private int straight = 5;
     private int left = 0;
     private int right = 0;
+    
 
     private int randint() {
         if (straight != 0) {
@@ -51,8 +52,10 @@ public class tileSpawner : MonoBehaviour{
     }
 
     public void spawnTile() {
+        int idx = randint();
         GameObject tmp = Instantiate(groundTile, nextSpawnerPoint, Quaternion.identity);
-        nextSpawnerPoint = tmp.transform.GetChild(randint()).transform.position;
+        nextSpawnerPoint = tmp.transform.GetChild(idx).transform.position;
+        // return idx;
     }
 
     // Start is called before the first frame update
