@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour {
+
+    bool alive = true;
 
     [SerializeField] private float speed = 9.0f;
     private bool turnLeft, turnRight, jump;
@@ -20,6 +23,11 @@ public class playerMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+        if (!alive) {
+            return;
+        }
+
         turnLeft = Input.GetKeyDown(KeyCode.A);
         turnRight = Input.GetKeyDown(KeyCode.D);
         jump = Input.GetKeyDown(KeyCode.Space);
@@ -43,5 +51,14 @@ public class playerMovement : MonoBehaviour {
 
         myCharacterController.SimpleMove(new Vector3(0f, 0f, 0f));
         myCharacterController.Move((transform.forward * speed + (moveDir + upwardVec)) * Time.deltaTime);
+
+        if (transform.position.y < -10) {
+            die();
+        }
+    }
+
+    public void die() {
+        alive = false;
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

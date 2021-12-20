@@ -3,7 +3,7 @@ using System;
 
 public class tileSpawner : MonoBehaviour{
 
-    public GameObject groundTile;
+    [SerializeField] private GameObject groundTile;
     Vector3 nextSpawnerPoint;
     private System.Random crand = new System.Random();
     private int straight = 5;
