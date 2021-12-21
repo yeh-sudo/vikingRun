@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CountScore : MonoBehaviour{
 
-    public static int scoreValue = 0;
+    public static float scoreValue = 0;
     Text score;
 
     // Start is called before the first frame update
@@ -15,6 +15,6 @@ public class CountScore : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        score.text = "Score: " + scoreValue;
+        score.text = "Score: " + (int)scoreValue;
     }
 }

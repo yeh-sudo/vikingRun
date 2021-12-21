@@ -14,6 +14,6 @@ public class DieScore : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        score.text = "Your score: " + CountScore.scoreValue;
+        score.text = "Your score: " + (int)CountScore.scoreValue;
     }
 }

@@ -78,6 +78,7 @@ public class playerMovement : MonoBehaviour {
 
         myCharacterController.SimpleMove(new Vector3(0f, 0f, 0f));
         myCharacterController.Move((transform.forward * speed + (moveDir + upwardVec)) * Time.deltaTime);
+        CountScore.scoreValue += (1 * Time.deltaTime);
 
         if (transform.position.y < -10) {
             die();
