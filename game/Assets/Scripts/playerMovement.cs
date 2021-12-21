@@ -86,6 +86,6 @@ public class playerMovement : MonoBehaviour {
 
     public void die() {
         alive = false;
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
