@@ -8,7 +8,7 @@ public class playerMovement : MonoBehaviour {
     bool alive = true;
 
     [SerializeField] private float speed = 9.0f;
-    private bool turnLeft, turnRight, jump;
+    private bool turnLeft, turnRight, jump, forward;
     private CharacterController myCharacterController;
     private float jumpSpeed = 9.0f;
     private float ySpeed = -1.0f;
@@ -18,7 +18,8 @@ public class playerMovement : MonoBehaviour {
 
     private Animator anim;
     private bool isJumping;
-    private bool isGrounded; 
+    private bool isGrounded;
+    private bool isRunning = false;
 
 
     // Start is called before the first frame update
@@ -36,8 +37,20 @@ public class playerMovement : MonoBehaviour {
 
         turnLeft = Input.GetKeyDown(KeyCode.A);
         turnRight = Input.GetKeyDown(KeyCode.D);
+        forward = Input.GetKeyDown(KeyCode.W);
         jump = Input.GetKeyDown(KeyCode.Space);
 
+        if (forward) {
+            isRunning = true;
+            anim.SetBool("Running", true);
+        }
+
+        if (!isRunning) {
+            return;
+        }
+        else {
+            anim.SetBool("Running", true);
+        }
 
         if (turnLeft)
             transform.Rotate(new Vector3(0f, -90f, 0f));
