@@ -15,10 +15,6 @@ public class playerAnimations : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        if (myCharacterController.isGrounded) {
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                anim.SetTrigger("jump");
-            }
-        }
+        
     }
 }

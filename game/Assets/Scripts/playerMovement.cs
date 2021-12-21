@@ -16,9 +16,15 @@ public class playerMovement : MonoBehaviour {
     private Vector3 moveDir;
 
 
+    private Animator anim;
+    private bool isJumping;
+    private bool isGrounded; 
+
+
     // Start is called before the first frame update
     void Start() {
         myCharacterController = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,8 +46,16 @@ public class playerMovement : MonoBehaviour {
         if (myCharacterController.isGrounded) {
             moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             moveDir *= speed;
+            anim.SetBool("isGrounded", true);
+            isGrounded = true;
+            anim.SetBool("isJumping", false);
+            isJumping = false;
             if (jump) {
                 upwardVec.y = jumpSpeed;
+                anim.SetBool("isJumping", true);
+                isJumping = true;
+                anim.SetBool("isGrounded", false);
+                isGrounded = false;
             }
         }
         else {

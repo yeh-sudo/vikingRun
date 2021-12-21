@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour{
             return;
         }
 
-        if (other.gameObject.name != "Ch24_nonPBR@Running Crawl") {
+        if (other.gameObject.name != "Ch24_nonPBR") {
             return;
         }
 

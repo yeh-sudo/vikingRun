@@ -12,7 +12,7 @@ public class Obstacle : MonoBehaviour{
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.name == "Ch24_nonPBR@Running Crawl") {
+        if (collision.gameObject.name == "Ch24_nonPBR") {
             PlayerMovement.die();
         }
     }
