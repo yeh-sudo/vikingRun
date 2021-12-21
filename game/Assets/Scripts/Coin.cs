@@ -17,7 +17,7 @@ public class Coin : MonoBehaviour{
             return;
         }
 
-
+        CountScore.scoreValue += 10;
         Destroy(gameObject);
     }
 
