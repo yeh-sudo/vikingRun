@@ -2,6 +2,10 @@
 A game which is same as Temple Run.
 
 1. Enviornment
+Operating System: Windows 11
+Unity 2020.3.23f1
+CPU: Ryzen R9 5900X
+GPU: Nvidia Geforce RTX 3080
 
 2. How to use (play) your game
 Just click the "game.exe" in the folder and the game will launch automatically.
@@ -17,3 +21,5 @@ There are a lot of holes or obstacles on your road. You need to jump over them t
 
 5. Feedback
 Through this project, I thought to make a game is not an easy job and it's challenging. I need to brainstorming new idea to make the game fun. It's worth to do this homework and I have learned a lot of things through this homework.
+
+GitHub: https://github.com/yeh-sudo/vikingRun
